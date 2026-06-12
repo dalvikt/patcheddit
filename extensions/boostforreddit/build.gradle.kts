@@ -8,6 +8,7 @@ dependencies {
     compileOnly(project(":extensions:shared:library"))
     compileOnly(project(":extensions:boostforreddit:stub"))
     implementation(libs.annotation)
+    compileOnly("androidx.preference:preference:1.2.1")   // settings menu (provided by the app at runtime)
     compileOnly(libs.okhttp)
     implementation(libs.room.runtime)
     ksp(libs.room.compiler)
